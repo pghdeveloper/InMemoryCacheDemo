@@ -19,6 +19,16 @@ func SetKeyValuePair(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	if req.Key == "" {
+		http.Error(w, "Key is required", http.StatusBadRequest)
+		return
+	}
+
+	if req.Value == "" {
+		http.Error(w, "Value is required", http.StatusBadRequest)
+		return
+	}
+
 	C.SetDefault(req.Key, req.Value)
 
 	w.WriteHeader(http.StatusOK)
