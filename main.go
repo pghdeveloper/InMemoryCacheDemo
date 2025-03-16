@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/pghdeveloper/InMemoryCacheDemo/cachehandler"
+	"InMemoryCacheDemo/cachehandler"
 )
 
 func main() {
