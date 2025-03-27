@@ -12,3 +12,15 @@ The app runs on a single instance.  If traffic increases it's better to containe
 Since the data in a cache is usually persisted, we should implement a database to store the data.  And if the cache is expired, we can make a call to the database to get the data and store it in the cache.
 
 Implement cache strategies for better performance(TTL, cache warming, and cache expiration handling)
+
+Implement Middleware or a helper function to centralize error handling
+
+Input Validation
+
+Add Logging to handle key events like cache hits, misses, and errors
+
+Hardcode values to a configuration file
+
+Rate Limiting
+
+Use Https
